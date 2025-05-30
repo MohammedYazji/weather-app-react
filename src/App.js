@@ -71,7 +71,9 @@ function App() {
         <>
           <div className="info">
             <img
-              src={`/icons/${iconMap[weather.weather[0].icon]}`}
+              src={`${process.env.PUBLIC_URL}/icons/${
+                iconMap[weather.weather[0].icon]
+              }`}
               alt={weather.weather[0].description}
             />
 
